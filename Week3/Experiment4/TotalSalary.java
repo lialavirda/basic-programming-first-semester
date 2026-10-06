@@ -15,15 +15,14 @@ public class TotalSalary {
         basicSalary = input.nextInt();
         
         bonus = 0.05 * basicSalary;
-        totalSalary = basicSalary + transportAllowance + mealAllowance + bonus-(0.01* basicSalary);
-
+        totalSalary = basicSalary + transportAllowance + mealAllowance + bonus;
+      
         System.out.println("\n--- Salary Details ---");
         System.out.println("Basic Salary        : Rp " + basicSalary);
-
         System.out.println("Transport Allowance : Rp " + transportAllowance);
         System.out.println("Meal Allowance      : Rp " + mealAllowance);
         System.out.println("Performance Bonus   : Rp " + bonus);
-        System.out.println("Total Salary        : Rp " + totalSalary);
+        System.out.println("Total Salary        : Rp " + (int) totalSalary);
         input.close();
     }
 }

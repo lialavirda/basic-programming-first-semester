@@ -6,13 +6,13 @@ public class CalculateTotalPaymentLiala {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int price;
+        double price;
         double discount;
         double discountCode = 0.15;
         double totalPayment;
 
         System.out.print("Enter the price of the clothes (Rp): ");
-        price = input.nextInt();
+        price = input.nextDouble();
 
         discount = price * discountCode;
         totalPayment = price - discount;
